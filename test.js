@@ -4,7 +4,7 @@ var term = require( 'terminal-kit' ).terminal;
 //
 // BMV
 //
-var port = new serialport.SerialPort('/dev/ttyBMV0', {
+var port = new serialport.SerialPort('/dev/ttyS0', {
                 baudrate: 19200,
                 parser: serialport.parsers.readline('\r\n')});
 
