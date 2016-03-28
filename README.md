@@ -1,5 +1,7 @@
 # vedirect
-Nodejs Victron Ve.Direct npm module
+Nodejs Victron Ve.Direct
+
+*** This is work in Progress, not usable yet! ***
 
 ### Install
 
