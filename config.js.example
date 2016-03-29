@@ -1,0 +1,7 @@
+config = {
+    i2c:     {
+	device:	'/dev/ttyUSB0'		// 1st Ve.Direct device
+	}
+};
+
+module.exports = config;
