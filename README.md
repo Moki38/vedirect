@@ -23,3 +23,7 @@ $ nodejs vedirect.js
 
 This version only can handle 1 Ve.Direct interface, as i haven't found a way to create udev rules for the 
 new Ve.Direct devices (something about a missing \%{Serial id}
+
+This version has been build/tested with Node v5
+$curl --silent --location https://rpm.nodesource.com/setup_5.x | bash -
+
