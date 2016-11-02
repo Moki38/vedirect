@@ -1,38 +1,29 @@
 {
   "name": "vedirect",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "VE.Direct",
-  "main": "vedirect.js",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/Moki38/vedirect.git"
   },
   "keywords": [
     "Raspberry PI",
-    "Banana Pro",
-    "PI",
     "Boat Automation",
     "Node.js",
     "MPPT",
     "BMV",
-    "RPI"
+    "Ve.direct"
   ],
   "dependencies": {
-    "terminal-kit": "0.24.0",
-    "serialport": "2.0.6"
+    "terminal-kit": "~0.24.0",
+    "serialport": "~4.0.0"
   },
   "author": {
     "name": "Eric van Dijken <eric@team-moki.nl>"
   },
-  "contributors": [
-    {
-      "name": "",
-      "email": "@",
-      "url": "https://github.com/None"
-    }
-  ],
   "scripts": {
-    "start": "node vedirect.js"
+    "start": "node test.js"
   },
   "license": "MIT"
 }
