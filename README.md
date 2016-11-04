@@ -4,26 +4,36 @@ Nodejs Victron Ve.Direct
 - BMV-700
 - MPPT
 
-*** This is work in Progress, not usable yet! ***
-
 ### Install
 
 ```
 $ npm install 
+```
 
+### Example
+Don't forget to configure the correct serialport for your BMV in test.js
+```
+$ nodejs test.js
 ```
 
 ### Usage
 
-$ nodejs vedirect.js
-
+```
+var vedirect = require( 'vedirect' );
+var bmvdata = {};
+vedirect.open('/dev/ttyBMV0');
+forever {
+  bmvdata = vedirect.update();
+  console.log(bmvdata.V);
+}
+vedirect.close('/dev/ttyBMV0');
 ```
 
 ### Restrictions
 
-This version only can handle 1 Ve.Direct interface, as i haven't found a way to create udev rules for the 
+This version only can currently handle 1 Ve.Direct interface, as i haven't found a way to create udev rules for the 
 new Ve.Direct devices (something about a missing \%{Serial id}
 
-This version has been build/tested with Node v5
-$curl --silent --location https://rpm.nodesource.com/setup_5.x | bash -
+This version has been build/tested with Node v6
+$curl --silent --location https://rpm.nodesource.com/setup_6.x | bash -
 
